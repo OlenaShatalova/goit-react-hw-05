@@ -8,6 +8,7 @@ import Loader from '../components/Loader/Loader';
 
 import { getMoviesBySearch } from '../apiService/movies';
 import Section from '../components/Section/Section';
+import ParticlesBackground from '../components/ParticlesBackground/ParticlesBackground';
 
 const MoviesPage = () => {
   const [searchParams, setSearchParams] = useSearchParams({});
@@ -58,6 +59,7 @@ const MoviesPage = () => {
             </>
           )}
           {loader && <Loader />}
+          <ParticlesBackground />
         </Container>
       </Section>
     </>

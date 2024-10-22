@@ -1,0 +1,9 @@
+/* ParticlesBackground.css */
+.particles {
+  position: absolute;
+  top: 60px; /* Висота твого заголовка */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Щоб частинки були позаду інших елементів */
+}

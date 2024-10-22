@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import List from '../List/List';
 import ListItem from '../ListItem/ListItem';
+import ParticlesBackground from '../ParticlesBackground/ParticlesBackground';
 
 const MoviesList = ({ movies }) => {
   const location = useLocation();
@@ -17,6 +18,7 @@ const MoviesList = ({ movies }) => {
           </ListItem>
         ))}
       </List>
+      <ParticlesBackground />
     </>
   );
 };

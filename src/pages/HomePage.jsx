@@ -29,14 +29,16 @@ const HomePage = () => {
   }, []);
 
   return (
-    <Section>
-      <Container>
-        <h1 style={{ marginBottom: 15 }}>Trending Today</h1>
-        {error && <p>{error}</p>}
-        <MoviesList movies={movies} />
-        {loader && <Loader />}
-      </Container>
-    </Section>
+    <>
+      <Section>
+        <Container>
+          <h1 style={{ marginBottom: 15 }}>Trending Today</h1>
+          {error && <p>{error}</p>}
+          <MoviesList movies={movies} />
+          {loader && <Loader />}
+        </Container>
+      </Section>
+    </>
   );
 };
 
