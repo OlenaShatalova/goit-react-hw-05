@@ -45,7 +45,18 @@ const MoviesPage = () => {
         <Container>
           <SearchForm onSubmit={handleSubmit} />
           {error && <p>{error}</p>}
-          <MoviesList movies={movies} />
+          {searchValue && (
+            <>
+              {movies.length !== 0 ? (
+                <MoviesList movies={movies} />
+              ) : (
+                <p>
+                  According to your request <b>{searchValue}</b>, nothing was
+                  found
+                </p>
+              )}
+            </>
+          )}
           {loader && <Loader />}
         </Container>
       </Section>

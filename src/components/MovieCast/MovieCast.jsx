@@ -33,27 +33,31 @@ const MovieCast = () => {
   return (
     <>
       {error && <p>{error}</p>}
-      <ul className={css.castList}>
-        {info &&
-          info.map(p => {
-            return (
-              <li key={p.cast_id} className={css.item}>
-                <img
-                  className={css.photo}
-                  src={
-                    p.profile_path
-                      ? `https://image.tmdb.org/t/p/w500/${p.profile_path}`
-                      : defaultImg
-                  }
-                  width={100}
-                  alt="poster"
-                />
-                <p className={css.name}>{p.name}</p>
-                <p className={css.char}>Character: {p.character}</p>
-              </li>
-            );
-          })}
-      </ul>
+      {info.length !== 0 ? (
+        <ul className={css.castList}>
+          {info &&
+            info.map(p => {
+              return (
+                <li key={p.cast_id} className={css.item}>
+                  <img
+                    className={css.photo}
+                    src={
+                      p.profile_path
+                        ? `https://image.tmdb.org/t/p/w500/${p.profile_path}`
+                        : defaultImg
+                    }
+                    width={100}
+                    alt="poster"
+                  />
+                  <p className={css.name}>{p.name}</p>
+                  <p className={css.char}>Character: {p.character}</p>
+                </li>
+              );
+            })}
+        </ul>
+      ) : (
+        <p>We donʼt have any data for this movie</p>
+      )}
       {loader && <Loader />}
     </>
   );
