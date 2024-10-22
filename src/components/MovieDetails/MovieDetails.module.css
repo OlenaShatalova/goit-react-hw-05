@@ -1,0 +1,61 @@
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.poster {
+  border-radius: 5px;
+  height: 100%;
+  margin-inline: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  font-style: oblique;
+}
+
+.year {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.tagline {
+  font-style: oblique;
+  font-size: 24px;
+}
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .infoWrapper {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+
+  .info {
+    padding: 15px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .title {
+    text-align: left;
+  }
+}

@@ -1,0 +1,14 @@
+.backBtn {
+  color: grey;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: left;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.backBtn:hover {
+  color: rgb(195, 40, 40);
+  text-shadow: 2px -2px 5px rgba(0, 0, 0, 0.5);
+}

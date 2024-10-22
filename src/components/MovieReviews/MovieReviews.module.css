@@ -1,0 +1,25 @@
+.list {
+  list-style: none;
+}
+
+.item {
+  margin-bottom: 25px;
+}
+
+.author {
+  margin-left: 25px;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 18px;
+}
+
+.time {
+  margin-left: 25px;
+  font-size: 14px;
+  font-style: oblique;
+  margin-bottom: 5px;
+}
+
+.content {
+  text-align: justify;
+}
